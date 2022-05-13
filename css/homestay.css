@@ -12,125 +12,148 @@ section {
 body {
   margin: 0px;
   padding: 0px;
-  font-family: 'Fira Sans', sans-serif;
-}
-.header-section { background: linear-gradient(to right, rgb(227 209 102 / 80%), rgb(39 205 52 / 80%));
-
-background: -moz-linear-gradient(to right, rgb(227 209 102 / 80%), rgb(39 205 52 / 80%));
-
-
+  font-family: "Fira Sans", sans-serif;
 }
 
 
+.carousel-item:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  min-height: 100px;
+  background: #000000c4;
+  opacity: 0.7;
+}
+
+.home-slider h2 {
+  font-size: 48px;
+  line-height: normal;
+}
+.home-slider .btn-outline-light {
+  font-size: 22px;
+  line-height: normal;
+}
+.about-section p {
+  font-size: 16px;
+  line-height: 28px;
+}
+.service-box h4 {
+  font-size: 24px;
+}
+.contact-section {
+  background: linear-gradient(
+    to right,
+    rgb(227 209 102 / 80%),
+    rgb(39 205 52 / 80%)
+  );
+
+  background: -moz-linear-gradient(
+    to right,
+    rgb(227 209 102 / 80%),
+    rgb(39 205 52 / 80%)
+  );
+}
+.contact-box .form-control {
+  height: 50px;
+}
+.contact-box textarea.form-control {
+  height: 150px;
+}
+.address-box p {
+  font-size: 16px;
+  line-height: 28px;
+}
+span {
+  color: #93df80;
+}
+
+.header-section .btn-outline-light {
+  color: white;
+  border-color: #f8f9fa;
+   background: linear-gradient(to right, #e50c05, #d75937);
  
-
-.home-slider h2{ font-size: 48px; line-height: normal;}
-.home-slider .btn-outline-light{font-size: 22px; line-height: normal;}
-.about-section p{ font-size: 16px; line-height: 28px;}
-.service-box h4{font-size: 24px;}
-.contact-section{
- background: linear-gradient(to right, rgb(227 209 102 / 80%), rgb(39 205 52 / 80%));
-
-background: -moz-linear-gradient(to right, rgb(227 209 102 / 80%), rgb(39 205 52 / 80%)); }
-.contact-box .form-control{ height:50px;}
-.contact-box textarea.form-control{ height:150px;}
-.address-box p{ font-size: 16px; line-height: 28px;}
-span{
-
-  color: #5dd93e;  
-  }
-
-
- .header-section .btn-outline-light {
-    color: #0078b1;
-    border-color: #f8f9fa;
-    background: white;
 }
 .header-section .btn-outline-light:hover {
-
-  background: linear-gradient(to right,#70f03d,#45b5e9);
+  
+ background: linear-gradient(to right, #0bf492, #1bb6b6);
   color: #fff;
 }
- 
+
 .carousel-item .btn:hover {
-   color: white;
-    background: linear-gradient(to top, rgb(101 239 67 / 80%), rgb(53 181 237 / 80%));
+  color: white;
+  background: linear-gradient(to right, #04a268, #0b8282);
 }
 
-
-
-
-
-
-
-  .welcome h1{
+.welcome h1 {
   font-size: 45px;
 }
-.welcome h2{
+.welcome h2 {
   font-size: 22px;
 }
-  
 
-  
-  
-  
-  
-  .numbers .rect {
-    position: relative;
-    z-index: 1;
-    background: rgb(255, 255, 255);
-    width: 17rem;
-    height: 12rem;
-    padding-top: 3.5vmin;
-    margin: 1rem;
-    border-radius: 0.5em;
-    box-shadow: 1px 2px 50px 0px rgba(255, 0, 0, 0.349);
-  }
-  
-  .numbers {
-    margin-top: -15vmin;
-  }
-  
-  .numbers .rect h5 {
-    font-size: 2rem;
-    color: tomato;
-  }
-  
+.numbers .rect {
+  position: relative;
+  z-index: 1;
+  background: rgb(255, 255, 255);
+  width: 17rem;
+  height: 12rem;
+  padding-top: 3.5vmin;
+  margin: 1rem;
+  border-radius: 0.5em;
+  box-shadow: 1px 2px 50px 0px rgba(255, 0, 0, 0.349);
+}
+
+.service-box  {
+  position: relative;
  
-  .change_content:after{
-    content: '';
-    animation :changetext 10s infinite linear;
-    color: white;
-  }
+}
+.service-box .img-fluid {
+ cursor: pointer;
+ background: red;
 
+}
 
+.service-box .img-fluid::hover {
+background: black;
+}
+.numbers {
+  margin-top: -15vmin;
+}
 
+.numbers .rect h5 {
+  font-size: 2rem;
+  color: tomato;
+}
 
+.change_content:after {
+  content: "";
+  animation: changetext 10s infinite linear;
+  color: white;
+}
 
-
-  .service-boxx{
-  transition: .5s;
+.service-boxx {
+  transition: 0.5s;
   text-align: center;
   height: 210px;
 
-background: linear-gradient(rgb(215 227 207),rgb(117 236 110));
+  background: linear-gradient(rgb(215 227 207), rgb(117 236 110));
 
-
-background: -moz-linear-gradient(rgb(215 227 207),rgb(117 236 110));
-
+  background: -moz-linear-gradient(rgb(215 227 207), rgb(117 236 110));
 }
 
-.service-boxx .img{
-  
+.service-boxx .img {
   font-size: 32px;
   line-height: 70px;
-
 }
-.service-boxx .content{
+.service-boxx .content {
   height: 10px;
-  transition: .5s;
+  transition: 0.5s;
 }
-.service-boxx .content h3{
+.service-boxx .content h3 {
   font-size: 20px;
   font-weight: 300;
   line-height: 25px;
@@ -138,37 +161,48 @@ background: -moz-linear-gradient(rgb(215 227 207),rgb(117 236 110));
   text-transform: uppercase;
   text-decoration: brown;
 }
-.service-boxx .content p{
+.service-boxx .content p {
   color: rgb(3, 2, 2);
   line-height: 30px;
-padding: 2px;
-font-family:  sans-serif;
-
+  padding: 2px;
+  font-family: sans-serif;
 }
-.service-boxx:hover{
-   background: linear-gradient(to right, rgb(227 209 102 / 80%), rgb(39 205 52 / 80%));
+.service-boxx:hover {
+  background: linear-gradient(
+    to right,
+    rgb(227 209 102 / 80%),
+    rgb(39 205 52 / 80%)
+  );
 
-background: -moz-linear-gradient(to right, rgb(227 209 102 / 80%), rgb(39 205 52 / 80%));
-
-
-
+  background: -moz-linear-gradient(
+    to right,
+    rgb(227 209 102 / 80%),
+    rgb(39 205 52 / 80%)
+  );
 }
 
+.header-section .navbar-nav .nav-item .nav-link {
+  color: rgb(204 41 57);
+}
+.header-section .navbar-nav .nav-item .nav-link:hover {
+  color: rgb(12, 204, 92);
+}
 
-  @keyframes changetext{
-    0%{content:"Enjoy Happiest Moments of your life";}
-     
-     50%{content:"Traditional Homestay ";}
-  
-     
-     100%{content:"Come  Stay and Enjoy your Day ";}
-
+@keyframes changetext {
+  0% {
+    content: "Enjoy Happiest Moments of your life";
   }
 
-@media(max-width:991px){
-  
+  50% {
+    content: "Traditional Homestay ";
+  }
 
+  100% {
+    content: "Come  Stay and Enjoy your Day ";
+  }
+}
 
+@media (max-width: 991px) {
   .carousel-caption {
     position: absolute;
     /* right: 15%; */
@@ -176,82 +210,72 @@ background: -moz-linear-gradient(to right, rgb(227 209 102 / 80%), rgb(39 205 52
     /* left: 15%; */
     z-index: 10;
     /* padding-top: 20px; */
-   
+
     color: #fff;
     text-align: center;
-}
-    #focuzSlider .carousel-caption h3 {
-      font-size: 24px;
-    
-    }
-    #focuzSlider .carousel-caption h2 {
-      font-size: 20px;
-    
-    }
-    .home-slider .btn-outline-light {
-      font-size: 15px;
-      line-height: normal;
-    }
-.welcome h1{
-  font-size: 35px;
-}
-.welcome h2{
-  font-size: 25px;
-}
-
-.w-100 {
-  width: 100%!important;
-  height: 60vh;
-  object-fit: cover;
-}
-}
-@media(max-width:767px){
-    .header-section .navbar-brand img {
-        width: 200px;
-
-    }
-
-    .carousel-caption {
-      position: absolute;
-      /* right: 15%; */
-      top: 56%;
-      /* left: 15%; */
-      z-index: 10;
-      /* padding-top: 20px; */
-     
-      color: #fff;
-      text-align: center;
   }
-#focuzSlider .carousel-caption h3 {
-  font-size: 8px;
+  #focuzSlider .carousel-caption h3 {
+    font-size: 24px;
+  }
+  #focuzSlider .carousel-caption h2 {
+    font-size: 20px;
+  }
+  .home-slider .btn-outline-light {
+    font-size: 15px;
+    line-height: normal;
+  }
+  .welcome h1 {
+    font-size: 35px;
+  }
+  .welcome h2 {
+    font-size: 25px;
+  }
 
+  .w-100 {
+    width: 100% !important;
+    height: 60vh;
+    object-fit: cover;
+  }
 }
-#focuzSlider .carousel-caption h2 {
-  font-size: 25px;
+@media (max-width: 767px) {
+  .header-section .navbar-brand img {
+    width: 200px;
+  }
 
-}
-#focuzSlider .carousel-caption h4 {
-  font-size: 9px;
+  .carousel-caption {
+    position: absolute;
+    /* right: 15%; */
+    top: 56%;
+    /* left: 15%; */
+    z-index: 10;
+    /* padding-top: 20px; */
 
-}
-.home-slider .btn-outline-light {
-  font-size: 10px;
-  line-height: normal;
-}
-.welcome h1{
-  font-size: 25px;
-}
-.welcome h2{
-  font-size: 15px;
-}
+    color: #fff;
+    text-align: center;
+  }
+  #focuzSlider .carousel-caption h3 {
+    font-size: 8px;
+  }
+  #focuzSlider .carousel-caption h2 {
+    font-size: 25px;
+  }
+  #focuzSlider .carousel-caption h4 {
+    font-size: 9px;
+  }
+  .home-slider .btn-outline-light {
+    font-size: 10px;
+    line-height: normal;
+  }
+  .welcome h1 {
+    font-size: 25px;
+  }
+  .welcome h2 {
+    font-size: 15px;
+  }
 
-
-.w-100 {
-  width: 100%!important;
-  height: 60vh;
-  object-fit: cover;
-}
-
-
-
+  .w-100 {
+    width: 100% !important;
+    height: 60vh;
+    object-fit: cover;
+  }
 }
